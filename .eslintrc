@@ -1,3 +1,11 @@
 {
-  "extends": "airbnb-base/legacy"
+  "extends": "loopback",
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "max-len": ["error", 90, 4, {
+      "ignoreComments": true,
+      "ignoreUrls": true,
+      "ignorePattern": "^\\s*var\\s.+=\\s*(require\\s*\\()|(/)"
+    }]
+  }
 }
